@@ -1,0 +1,3 @@
+<model-viewer src="Example.glb" camera-controls environment-image="whipple_creek_regional_park_04_1k.hdr" skybox-image="whipple_creek_regional_park_04_1k.hdr" camera-orbit="372.7deg 78.84deg 26.23m" poster="poster.png">
+
+</model-viewer>

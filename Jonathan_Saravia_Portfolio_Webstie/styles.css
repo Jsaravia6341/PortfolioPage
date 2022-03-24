@@ -1,0 +1,568 @@
+
+
+@charset "UTF-8";
+* {
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'titleFont';
+	src: url('fonts/chary.tff')format('truetype');
+}
+
+body {
+	/*background-color:#1f1f1f;*/
+	background-image: url('images/background2.png');
+	margin-top: 0px;
+}
+
+h1 {
+	color: white;
+	text-align: center;
+	font-family: arial;
+	font-size: 3vmax;
+}
+
+h2 {
+	color: white;
+	text-align: center;
+	font-family: arial;
+	font-size: 2vmax;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+h3 {
+	color: white;
+	text-align: center;
+	font-family: arial;
+	font-size: 2vmax;
+}
+
+p {
+	font-family: verdana;
+	font-size: 20px;
+	color: white;
+}
+
+
+/*#RightArrowShip
+{
+  position: absolute;
+   float:right;
+   max-width:12.5%;
+   max-height:12.5%;
+   bottom:32.5px;
+   right:42.5px;
+   z-index: 2;
+}
+
+
+#LeftArrowShip
+{
+   position: absolute;
+   float:left;
+   max-width:12.5%;
+   max-height:12.5%;
+   bottom:32.5px;
+   left:42.5px;
+   z-index: 2;
+   -webkit-transform: scaleX(-1);
+   transform: scaleX(-1);
+}
+
+#RightArrowFaction
+{
+   position: absolute;
+   float:right;
+   max-width:15%;
+   max-height:15%;
+   bottom:0;
+   right:0;
+   z-index: 2;
+}
+
+
+#LeftArrowFaction
+{
+   position: absolute;
+   float:left;
+   max-width:15%;
+   max-height:15%;
+   bottom:0;
+   left:0;
+   z-index: 2;
+   -webkit-transform: scaleX(-1);
+   transform: scaleX(-1);
+}
+*/
+
+#RightArrowShip {
+	position: absolute;
+	float: right;
+	max-width: 15%;
+	max-height: 15%;
+	bottom: 0;
+	right: 0;
+	z-index: 2;
+}
+
+#LeftArrowShip {
+	position: absolute;
+	float: left;
+	max-width: 15%;
+	max-height: 15%;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+}
+
+.SocialContact {
+	padding: 3px 0px 2px 0px;
+	max-width: 128px;
+	min-height: 128px;
+	margin: auto;
+	list-style: none;
+	text-align: center;
+	/* background-color: #2E1C1C; */
+}
+
+.resumeContainer {
+	border: 5px ridge #4886af;
+	/* Green border */
+}
+
+.codeSnippets {
+	background-color: white;
+	border: 5px ridge #4886af;
+	/* Green border */
+	width: 100%;
+}
+
+.social1 {}
+
+.social2 {
+	top: -10px
+}
+
+.social3 {
+	left: 188px;
+	top: -20px;
+}
+
+.social4 {
+	left: -188px;
+	top: -10px
+}
+
+.crossfade a {
+	float: left;
+}
+
+.crossfade {
+	position: relative;
+	height: 128px;
+	width: 128px;
+	margin: 0 0;
+}
+
+.crossfade img {
+	position: absolute;
+	-webkit-transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-o-transition: opacity 0.5s ease-in-out;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.crossfade img.top:hover {
+	opacity: 0;
+}
+
+.Game_Projects:after {
+	content: "";
+	clear: both;
+}
+
+.Gallery_Element {
+	width: 50%;
+	float: left;
+	padding: 50px 50px 50px 50px;
+}
+
+.Game_Title {
+	background-color: #073245;
+	color: white;
+	border: 15px ridge #4886af;
+	padding: 0px 30px 30px 30px;
+	float: left;
+	z-index: 2;
+	font-size: 1.5vmax;
+	font-weight: bold;
+}
+
+.Art_Title {
+	background-color: #073245;
+	color: white;
+	border: 15px ridge #4886af;
+	padding: 0px 30px 30px 30px;
+	float: left;
+	z-index: 2;
+	font-size: 1.5vmax;
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: myFirstFont;
+	src: url('fonts/AstroSpace.ttf');
+}
+
+#Ship_Type {
+	position: fixed;
+	left: 50%;
+	bottom: 1px;
+	text-align: justify;
+	transform: translateX(-50%);
+	font-family: myFirstFont;
+	font-size: 16px;
+}
+
+#NamePanel {
+	border: none;
+	position: fixed;
+	left: 50%;
+	bottom: 4.75px;
+	text-align: justify;
+	transform: translateX(-50%);
+	font-family: myFirstFont;
+}
+
+#FactionName {
+	position: fixed;
+	left: 50%;
+	bottom: -8px;
+	text-align: justify;
+	transform: translateX(-50%);
+}
+
+.infoCard {
+	float: left;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	position: relative;
+	-webkit-transition: margin-top 0.5s ease-in-out;
+	-moz-transition: margin-top 0.5s ease-in-out;
+	-o-transition: margin-top 0.5s ease-in-out;
+}
+
+.infoCard2 {
+	background-color: black;
+	border: 5px ridge #4886af;
+	z-index: -5;
+	width: inherit;
+	height: auto;
+	top: 0;
+	left: 0;
+	position: absolute;
+	-webkit-transition: margin-top 0.5s ease-in-out;
+	-moz-transition: margin-top 0.5s ease-in-out;
+	-o-transition: margin-top 0.5s ease-in-out;
+}
+
+.infoCard li {
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 1.25vmax;
+	text-align: left;
+	z-index: 0;
+}
+
+.infoCard h3 {
+	font-size: 1.5vmax;
+	text-decoration: underline;
+	text-align: center;
+	z-index: 0;
+}
+
+.Game_Title:hover .infoCard2 {
+	/*  opacity:0;*/
+	margin-top: 56%;
+	z-index: 2;
+}
+
+.Game_Title img:not(#RightArrowShip):not(#LeftArrowShip):not(#LeftArrowFaction):not(#RightArrowFaction):not(#NamePanel) {
+	border: 5px ridge #4886af;
+	position: relative;
+	z-index: 2;
+	-webkit-transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-o-transition: opacity 0.5s ease-in-out;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.Game_Title img:not(#RightArrowShip):not(#LeftArrowShip):not(#LeftArrowFaction):not(#RightArrowFaction):not(#NamePanel):hover {
+	opacity: 0;
+}
+
+.Game_Projects {
+	padding: 15px 0px 15px 0px;
+	max-width: 1600px;
+	margin: 0 auto;
+	list-style: square;
+	text-align: center;
+	list-style-type: none;
+	color: white;
+}
+
+.gamePreview {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: inherit;
+	border: 5px ridge #4886af;
+}
+
+.modelPreview {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	border: 5px ridge #4886af;
+	z-index: 2;
+}
+
+.vid-container {
+	position: relative;
+	width: 100%;
+}
+
+.model-container {
+	position: relative;
+	width: 610px;
+	height: 338px;
+}
+
+.GameEngineIcon {
+	position: relative;
+}
+
+.GameEngineIcon img {
+	position: absolute;
+	margin: 15px;
+	top: 0;
+	left: 0;
+	max-width: 15%;
+	max-height: inherit;
+	z-index: 0;
+}
+
+.DownloadIcon {
+	position: relative;
+}
+
+.DownloadIcon img {
+	border: none;
+	position: absolute;
+	margin: 15px;
+	top: 0;
+	right: 0;
+	max-width: 15%;
+	max-height: inherit;
+	z-index: 0;
+	-webkit-transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-o-transition: opacity 0.5s ease-in-out;
+}
+
+.videoIconClass {
+	border: none;
+	position: absolute;
+	margin: 15px;
+	top: 0;
+	right: 0;
+	float: left;
+	max-width: 10%;
+	max-height: inherit;
+	z-index: 0;
+}
+
+.DownloadIcon2 {
+	position: relative;
+}
+
+.DownloadIcon2 img {
+	border: none;
+	position: absolute;
+	margin: 15px;
+	top: 0;
+	right: 0;
+	max-width: 15%;
+	max-height: inherit;
+	z-index: 0;
+}
+
+.DownloadIcon img:hover {
+	opacity: 0;
+}
+
+.skillsBar span {
+	border-radius: 15px;
+	background-color: #073245;
+	/* Green background */
+	border: 3px ridge #4886af;
+	/* Green border */
+	color: white;
+	/* White text */
+	font-size: 1.5vmax;
+	padding: 10px 10px;
+	/* Some padding */
+	float: left;
+	/* Float the buttons side by side */
+	width: 25%;
+}
+
+#navbar {
+	/*  border: 3px solid #0d0e12; /* Green border */
+	z-index: 3;
+}
+
+#navbar button {
+	background-color: #073245;
+	/* Green background */
+	border: 5px ridge #4886af;
+	/* Green border */
+	color: white;
+	/* White text */
+	font-size: 1.5vmax;
+	padding: 10px 24px;
+	/* Some padding */
+	cursor: pointer;
+	/* Pointer/hand icon */
+	float: left;
+	/* Float the buttons side by side */
+	width: 25%;
+}
+
+#navbarArt {
+	/*  border: 3px solid #0d0e12; /* Green border */
+	z-index: 3;
+	margin-left: 0px;
+}
+
+#navbarArt button {
+	margin-top: 30px;
+	float: left;
+	/* Float the buttons side by side */
+	background-color: #073245;
+	/* Green background */
+	border: 5px ridge #4886af;
+	/* Green border */
+	color: white;
+	/* White text */
+	font-size: 1.5vmax;
+	padding: 10px 24px;
+	/* Some padding */
+	cursor: pointer;
+	/* Pointer/hand icon */
+	width: 50%;
+}
+
+@media only screen and (min-width: 557px) {
+	#navbar button:not(:last-child) {
+		border-right: none;
+		/* Prevent double borders */
+	}
+	/* Clear floats (clearfix hack) */
+	#navbar:after {
+		content: "";
+		clear: both;
+	}
+}
+
+
+/* Add a background color on hover */
+
+#navbar button:hover {
+	background-color: #83c1e8;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.sticky2 {
+	position: fixed;
+	top: 60px;
+	left: 0;
+	width: 100%;
+}
+
+.TitleBar {
+	margin-top: 0px;
+	background-color: #073245;
+	width: auto;
+}
+
+.TitleBar h1,
+h2 {
+	margin-top: 0;
+	background-color: #073245;
+	width: auto;
+	border: 5px ridge #4886af;
+	/* Green border */
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~THIS SECTION IS FOR MOBILE ONLY~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+@media only screen and (max-width: 556px) {
+	#navbar {
+		/*border: 3px solid #0d0e12; /* Green border */
+		z-index: 1;
+	}
+	.sticky {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: auto;
+		margin-left: 8px;
+		margin-right: 8px;
+	}
+	.Gallery_Element {
+		background-color: #1f1f1f;
+		width: 100%;
+		padding: 30px 30px 30px 30px;
+	}
+	#navbar button {
+		background-color: #4886af;
+		border: 3px ridge #0d0e12;
+		color: white;
+		/* White text */
+		font-size: 1.5vmax;
+		padding: 10px 24px;
+		/* Some padding */
+		cursor: pointer;
+		/* Pointer/hand icon */
+		display: block;
+		width: 100%;
+	}
+	#navbar button:not(:last-child) {}
+	.Game_Title {
+		background-color: #073245;
+		color: white;
+		border: 5px ridge #4886af;
+		padding: 0px 30px 30px 30px;
+		float: left;
+		z-index: 2;
+		font-size: 1.5vmax;
+		font-weight: bold;
+	}
+}

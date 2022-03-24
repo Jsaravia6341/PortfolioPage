@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel = "stylesheet"
+  type = "text/css"
+  href = "styles.css">
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+  <title>Jonathan Saravia</title>
+</head>
+
+
+
+
+<body onscroll="StickyNavBar()">
+  <div class = "TitleBar">
+    <h1 >Jonathan Saravia</h1>
+  </div>
+
+
+  <div class = "TitleBar">
+    <h2>Gameplay Programmer</h2>
+  </div>
+
+
+
+  <div class = "SocialContact">
+    <!--
+    <span class = "crossfade">
+      <a href="https://twitter.com/JonathanSaravia" target="_blank">
+        <img class="social1 bottom" width="128" height="128" src="images/instagram_Colour.png" alt="">
+        <img class="social1 top" width="128" height="128" src="images/instagram_Gray.png" alt="">
+      </a>
+    </span>
+    <span class = "crossfade">
+      <a href="https://twitter.com/JonathanSaravia" target="_blank">
+        <img class="social2 bottom" width="128" height="128" src="images/Twitter_Blue.png" alt="">
+        <img class="social2 top" width="128" height="128" src="images/Twitter_Gray.png" alt="">
+      </a>
+    </span>
+    -->
+
+
+
+
+    <div class = "crossfade">
+      <a href="https://twitter.com/Jon_Saravia" target="_blank">
+        <img class="social3 bottom" width="128" height="128" src="images/Twitter_Blue.png" alt="">
+        <img class="social3 top" width="128" height="128" src="images/Twitter_Gray.png" alt="">
+      </a>
+
+      <a href="mailto:jonathan.saravia@hotmail.ca" target="_top">
+        <img class="social4 bottom" width="128" height="128" src="images/Email_Colour.png" alt="">
+        <img class="social4 top" width="128" height="128" src="images/Email_Gray.png" alt="">
+      </a>
+      <a href="https://www.linkedin.com/in/jonathan-saravia-8b914b59/" target="_blank">
+        <img class="social2 bottom" width="118" height="118" src="images/linkedin_Colour.png" alt="">
+        <img class="social2 top" width="118" height="118" src="images/linkedin_Gray.png" alt="">
+      </a>
+
+    </div>
+
+
+  </div>
+
+  <div id="navbar">
+
+
+        <a href="index.html">
+          <button>Home</button>
+        </a>
+        <a href="gallery.html">
+          <button>Art Gallery</button>
+        </a>
+        <a href="about_me.html">
+          <button>About Me</button>
+        </a>
+        <a href="resume_page.html">
+          <button>Resume</button>
+        </a>
+
+  </div>
+
+
+
+<div>
+
+<h4>. </h4>
+
+
+</div>
+<div style="border: 15px ridge #4886af; padding:30px; width:75%; text-align:center; margin: auto; background-color:#1f1f1f;">
+
+  <div class = "skillsBar">
+
+
+    <div style="text-align:center;">
+
+      <span>C#/C++/Javascript</span>
+
+      <span>Gameplay Programming</span>
+
+      <span>AI/Physics Programming</span>
+
+      <span>Unity3D</span>
+
+    </div>
+
+  </div>
+
+<img width="128" height="128" src="images/portraiticon.png" alt="" style = "text-align:center; margin:auto; margin-top:20px;">
+<h3 style = "text-decoration: underline"> About Me</h3>
+<div style="text-align:left;">
+<p>
+  My name is Jonathan Saravia, a passionate game developer and gameplay programmer who enjoys developing video games, creating gameplay experiences, and experimenting with new technology to make unique games.
+</p>
+
+<p>
+  My main interests are gameplay, AI, and physics engine programming. I have a passion for creating smooth and cohesive object movement. I enjoy working independently and in team situations to create games that immerse players into the game world.
+</p>
+<p>
+  I have been working with Game Development for over 6 years, developing games in Unity mainly as a game programmer. I have also spent thousands of hours gaining experience with gameplay mechanics.
+</p>
+<p>
+  I have attended Niagara College for Game Development and Conestoga College for Game Design.
+</p>
+<p>
+  This website is my personal portfolio where I post my work and projects. Here you can see some of the projects I've had the opportunity to work on including <a href="https://store.steampowered.com/app/1138440/Galactic_Ruler/" target="_blank">Galactic Ruler</a> and a mobile game called <a href = "https://saravia95.itch.io/color-boom" target="_blank">Color Boom</a>.
+</p>
+  <p>
+  Please feel free to have a look around and contact me at   <a style="color: #4886af" href="mailto:jonathan.saravia@hotmail.ca"   target="_top">jonathan.saravia@hotmail.ca</a> for any inquiries.
+</p>
+</div>
+
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script>
+
+  window.onscroll = function() {StickyNavBar()};
+
+  var navbar1 = document.getElementById("navbar");
+  var sticky = navbar1.offsetTop;
+
+  function StickyNavBar() {
+    if (window.pageYOffset >= sticky) {
+      navbar1.classList.add('sticky');
+    } else {
+      navbar1.classList.remove('sticky');
+
+    }
+  }
+
+
+
+
+
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel = "stylesheet"
+  type = "text/css"
+  href = "styles.css">
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+  <!-- Import the component -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+  <title>Jonathan Saravia</title>
+</head>
+
+
+
+
+<body onscroll="StickyNavBar()">
+  <div class = "TitleBar">
+    <h1 >Jonathan Saravia</h1>
+  </div>
+
+
+  <div class = "TitleBar">
+    <h2>Gameplay Programmer</h2>
+  </div>
+
+
+
+  <div class = "SocialContact">
+    <!--
+    <span class = "crossfade">
+      <a href="https://twitter.com/JonathanSaravia" target="_blank">
+        <img class="social1 bottom" width="128" height="128" src="images/instagram_Colour.png" alt="">
+        <img class="social1 top" width="128" height="128" src="images/instagram_Gray.png" alt="">
+      </a>
+    </span>
+    <span class = "crossfade">
+      <a href="https://twitter.com/JonathanSaravia" target="_blank">
+        <img class="social2 bottom" width="128" height="128" src="images/Twitter_Blue.png" alt="">
+        <img class="social2 top" width="128" height="128" src="images/Twitter_Gray.png" alt="">
+      </a>
+    </span>
+    <span class = "crossfade">
+      <a href="https://twitter.com/JonathanSaravia" target="_blank">
+        <img class="social3 bottom" width="128" height="128" src="images/facebook_Colour.png" alt="">
+        <img class="social3 top" width="128" height="128" src="images/facebook_Gray.png" alt="">
+      </a>
+    </span>
+
+
+  -->
+    <div class = "crossfade">
+      <a href="https://twitter.com/Jon_Saravia" target="_blank">
+        <img class="social3 bottom" width="128" height="128" src="images/Twitter_Blue.png" alt="">
+        <img class="social3 top" width="128" height="128" src="images/Twitter_Gray.png" alt="">
+      </a>
+    <a href="mailto:jonathan.saravia@hotmail.ca" target="_top">
+        <img class="social4 bottom" width="128" height="128" src="images/Email_Colour.png" alt="">
+        <img class="social4 top" width="128" height="128" src="images/Email_Gray.png" alt="">
+      </a>
+      <a href="https://www.linkedin.com/in/jonathan-saravia-8b914b59/" target="_blank">
+        <img class="social2 bottom" width="118" height="118" src="images/linkedin_Colour.png" alt="">
+        <img class="social2 top" width="118" height="118" src="images/linkedin_Gray.png" alt="">
+      </a>
+    </div>
+
+  </div>
+
+  <div id="navbar">
+
+
+        <a href="index.html">
+          <button>Home</button>
+        </a>
+        <a href="gallery.html">
+          <button>Art Gallery</button>
+        </a>
+        <a href="about_me.html">
+          <button>About Me</button>
+        </a>
+        <a href="resume_page.html">
+          <button>Resume</button>
+        </a>
+  </div>
+
+  <div id="navbarArt">
+
+
+        <a href="gallery.html">
+          <button> <u>3D</u></button>
+        </a>
+        <a href="2DGallery.html">
+          <button style="color: grey; ">2D</button>
+        </a>
+
+  </div>
+
+
+
+  <div class="Game_Projects">
+
+
+
+    <div class="Gallery_Element">
+      <div class = "GameEngineIcon">
+        <a href = "https://www.battlegoat.com/" target="_blank">
+          <img src="images/BattleGoatIcon.png"  alt = "BattleGoat Studios Logo">
+        </a>
+      </div>
+      <div class="Game_Title">
+
+            <h3>Galactic Ruler</h3>
+
+
+            <div class = "model-container">
+              <div class = "infoCard">
+                <div class = "infoCard2">
+
+
+                  <h3>Model Involvment</h3>
+                  <ul>
+                     <li>Editing Meshes</li>
+                     <li>Kit-bashing</li>
+                     <li>Creating Meshes from Scratch</li>
+                     <li>Textures and Materials</li>
+                     <li>Converting Model files to other Modelling Software</li>
+                  </ul>
+
+
+                </div>
+              </div>
+              <model-viewer  class = "modelPreview" src="files/3DModels/GalacticRuler/Ship0.glb" auto-rotate camera-controls loading="eager" reveal="auto"  shadow-intensity = "1" exposure = "1" environment-image="images/HDR_Space_1.png" skybox-image="images/HDR_Space.png" camera-orbit="372.7deg 78.84deg 26.23m" poster="images/GalacticRuler_GAL.png">
+
+                <img id = "LeftArrowShip" src="images/Arrow.png" onclick="LeftButtonShip()"  alt = "Left Arrow">
+                <img id = "RightArrowShip" src="images/Arrow.png" onclick="RightButtonShip()"  alt = "Right Arrow">
+
+                <img id = "NamePanel" src="images/namepanel.png"   alt = "Galactic Ruler - Name Panel">
+
+                 <p id = "Ship_Type"> Ship </p>
+              </model-viewer>
+
+
+
+  <!--  <p id = "Ship_Type"> Ship </p>
+  <p id = "FactionName"> Faction </p>
+
+    <p id = "FactionName"> Faction </p>
+    <img id = "LeftArrowFaction" src="images/Arrow.png" onclick="LeftButtonFaction()"  alt = "Galactic Ruler - Spaceships">
+    <img id = "RightArrowFaction" src="images/Arrow.png" onclick="RightButtonFaction()"  alt = "Galactic Ruler - Spaceships">
+-->
+
+
+
+
+
+<!--onmousedown="myFunction()"-->
+  <!-- <img src="images/GalacticRuler.png" style= " max-width:100%;  max-height:100%;  " alt = "Galactic Ruler Title Screen">
+-->
+
+            </div>
+
+
+      </div>
+
+    </div>
+    <div class="Gallery_Element">
+      <div class="Game_Title">
+
+            <h3>Campfire Scene</h3>
+
+            <div class = "vid-container">
+
+              <video muted class="gamePreview">
+
+                  <source src="videos/CampfireScene.mp4" type="video/mp4">
+
+              </video>
+
+            </div>
+
+            <img src="images/Campfire.jpg" style= " max-width:100%;  max-height:inherit;  top:0; left:0;" alt = "Galactic Ruler Title Screen">
+
+
+
+      </div>
+
+    </div>
+
+
+    <div class="Gallery_Element">
+      <div class="Game_Title">
+
+
+              <h3>Classic Sonic</h3>
+              <div class = "vid-container">
+
+                <video muted class="gamePreview">
+
+                    <source src="videos/SonicModel.mp4" type="video/mp4">
+
+                </video>
+
+              </div>
+
+              <img src="images/SonicModel.jpg" style= " max-width:100%; max-height:inherit; top:0; left:0;" alt = "Classic Sonic Model">
+
+      </div>
+    </div>
+
+    <div class="Gallery_Element">
+      <div class="Game_Title">
+
+
+              <h3>Damaged Spaceship</h3>
+              <div class = "vid-container">
+
+                <video muted class="gamePreview">
+
+                    <source src="videos/DamagedSpaceship.mp4" type="video/mp4">
+
+                </video>
+
+              </div>
+
+              <img src="images/DamagedSpaceship.png" style= " border: 5px ridge #4886af; max-width:100%; max-height:inherit;  top:0; left:0;" alt = "A Damaged Spaceship in a bunker">
+
+      </div>
+    </div>
+
+    <div class="Gallery_Element">
+      <div class="Game_Title">
+
+
+              <h3>Magic Sub</h3>
+              <div class = "vid-container">
+
+                <video muted class="gamePreview">
+
+                    <source src="videos/MagicSub.mp4" type="video/mp4">
+
+                </video>
+
+              </div>
+
+              <img src="images/MagicSub.jpg" style= " border: 5px ridge #4886af; max-width:100%; max-height:inherit;  top:0; left:0;" alt = "A magical submarine">
+
+      </div>
+    </div>
+
+
+      <div class="Gallery_Element">
+        <div class="Art_Title">
+
+
+                <h3>A Cozy Gumball Room</h3>
+
+                <a href="images/GumballRoom.png" target="_blank">
+                  <img src="images/GumballRoom.png" style= "border: 5px ridge #4886af; max-width:100%; max-height:inherit; top:0; left:0;" alt = "A Spike Ball Flail Weapon">
+                </a>
+        </div>
+      </div>
+
+
+
+
+      <div class="Gallery_Element">
+        <div class="Game_Title">
+
+
+                <h3>Sonic Items</h3>
+                <div class = "vid-container">
+
+                  <video muted class="gamePreview">
+
+                      <source src="videos/SonicObjects.mp4" type="video/mp4">
+
+                  </video>
+
+                </div>
+
+
+
+                <img src="images/SonicObjects.png" style= " border: 5px ridge #4886af; max-width:100%; max-height:inherit;  top:0; left:0;" alt = "A few Objects from Sonic the Hedgehog">
+
+        </div>
+      </div>
+
+
+
+      <div class="Gallery_Element">
+        <div class="Art_Title">
+
+
+                <h3>A Suspended Glass Chair</h3>
+
+                <a href="images/chairGlass.jpg" target="_blank">
+                  <img src="images/chairGlass.jpg" style= "border: 5px ridge #4886af; max-width:100%; max-height:inherit; top:0; left:0;" alt = "A Suspended Glass Chair">
+                </a>
+        </div>
+      </div>
+
+  </div>
+<script>
+
+
+//  var targetFile = "/tmp/testfile2.bbx";
+
+
+
+  //var Clone = Source.cloneNode(true);
+  //Clone.setAttribute('src',Target);
+  //Source.parentNode.replaceChild(Clone,Source);
+
+  /*document.getElementsByClass( "RightArrow" ).onclick = function() {
+      console.log ( "Right Arrow Clicked");
+};*/
+var cars = ["Saab", "Volvo", "BMW"];
+
+
+
+let factionIndex = 0;
+let factionMax = 6;
+
+let shipIndex = 0;
+let shipMax = 8;
+let objNameList = ["Moth Drone", "Moth Battlecruiser", "Moth Troopship","Osmian Drone", "Osmian Battlecruiser", "Osmian Troopship","Dicapse Drone", "Dicapse Battlecruiser", "Dicapse Troopship"];
+document.querySelector('#Ship_Type').innerHTML =  objNameList[shipIndex];
+
+function LeftButtonShip() {
+  //console.log ("Left: files/3DModels/GalacticRuler/Faction" + factionIndex + "/Ship" + shipIndex + ".glb");
+
+  if(shipIndex > 0)
+  {
+    shipIndex--;
+    document.querySelector('.modelPreview').setAttribute('src', "files/3DModels/GalacticRuler/Ship" + shipIndex + ".glb");
+    document.querySelector('#Ship_Type').innerHTML =  objNameList[shipIndex];
+
+  }
+  else
+  {
+
+    shipIndex=shipMax;
+    document.querySelector('.modelPreview').setAttribute('src', "files/3DModels/GalacticRuler/Ship" + shipIndex + ".glb");
+    document.querySelector('#Ship_Type').innerHTML =  objNameList[shipIndex];
+
+  }
+}
+
+function RightButtonShip() {
+  console.log ("Right: files/3DModels/GalacticRuler/Faction" + factionIndex + "/Ship" + shipIndex + ".glb");
+  if(shipIndex < shipMax)
+  {
+    shipIndex++;
+    document.querySelector('.modelPreview').setAttribute('src', "files/3DModels/GalacticRuler/Ship" + shipIndex + ".glb");
+    document.querySelector('#Ship_Type').innerHTML =  objNameList[shipIndex];
+
+  }
+  else
+  {
+
+    shipIndex=0;
+    document.querySelector('.modelPreview').setAttribute('src', "files/3DModels/GalacticRuler/Ship" + shipIndex + ".glb");
+    document.querySelector('#Ship_Type').innerHTML =  objNameList[shipIndex];
+
+  }
+}
+
+function LeftButtonFaction() {
+//  console.log ("Left: files/3DModels/GalacticRuler/Faction" + factionIndex + "/Ship" + shipIndex + ".glb");
+
+  if(factionIndex > 0)
+  {
+    factionIndex--;
+    document.querySelector('.modelPreview').setAttribute('src', "files/3DModels/GalacticRuler/Ship" + shipIndex + ".glb");
+    document.querySelector('#FactionName').innerHTML = "Faction" + factionIndex;
+  }
+}
+
+function RightButtonFaction() {
+  //console.log ("Right: files/3DModels/GalacticRuler/Faction" + factionIndex + "/Ship" + shipIndex + ".glb");
+  if(factionIndex < factionMax)
+  {
+    factionIndex++;
+    document.querySelector('.modelPreview').setAttribute('src', "files/3DModels/GalacticRuler/Ship" + shipIndex + ".glb");
+    document.querySelector('#FactionName').innerHTML = "Faction" + factionIndex;
+  }
+}
+
+
+
+</script>
+
+
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script>
+
+  window.onscroll = function() {StickyNavBar()};
+
+  var navbar1 = document.getElementById("navbar");
+  var sticky = navbar1.offsetTop;
+
+  var navbar2 = document.getElementById("navbarArt");
+  var sticky2 = navbar2.offsetTop;
+
+  function StickyNavBar() {
+    if (window.pageYOffset >= sticky) {
+      navbar1.classList.add('sticky');
+    } else {
+      navbar1.classList.remove('sticky');
+
+    }
+
+    if (window.pageYOffset >= sticky2) {
+      navbar2.classList.add('sticky2');
+    } else {
+      navbar2.classList.remove('sticky2');
+
+    }
+  }
+
+
+var gamePreview = $('.gamePreview');
+var gameTitle = $('.Game_Title img:not(#RightArrowShip):not(#LeftArrowShip):not(#LeftArrowFaction):not(#RightArrowFaction):not(#NamePanel)');
+
+
+gameTitle.on('mouseenter', function()
+{
+
+
+
+
+  gamePreview.get(gameTitle.index($(this))).play();
+  console.log ( gameTitle.index($(this)));
+});
+gameTitle.on('mouseout blur', function()
+{
+
+
+
+
+  gamePreview.get(gameTitle.index($(this))).currentTime = 0;
+  gamePreview.get(gameTitle.index($(this))).pause();
+
+
+
+
+});
+
+  </script>
+</body>
+</html>
